@@ -59,6 +59,8 @@ return(
 <Box sx={{width:{xs:'auto',sm:'auto',md:"auto",lg:"50%"},display:'flex',flexDirection:'column',gap:'7px',alignItems:'left',justifyContent:'center'}}>
 <Typography sx={{fontSize:'18px',color:'black',fontWeight:'bold'}}>My Next Class</Typography>
 <Typography sx={{fontSize:'15px',color:'gray'}}>9:30 AM-Intro to Python</Typography>
+<Typography sx={{fontSize:'15px',color:'gray'}}><span style={{fontWeight:'bold',color:'black'}}>Teacher :</span> Sir Shehroz</Typography>
+
 <Typography sx={{fontSize:'14px',color:'gray',fontWeight:'bold'}}>Room 302</Typography>
 </Box>
 </Box> 

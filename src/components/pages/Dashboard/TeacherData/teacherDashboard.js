@@ -27,8 +27,9 @@ sx={{
 },
 }}/>
 </Box>
-<Cards/>
+<Cards />
 <TableEx searchQuery={searchQuery}/>
 </Box>
 </Box>
-)}
+)
+}

@@ -26,17 +26,17 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   },
 }));
 
-function createData(id, subj, marks) {
-  return {id, subj, marks};
+function createData(id, subj,subteacher, marks) {
+  return {id, subj, subteacher, marks};
 }
 
 const rows = [
-  createData(1,'English Language',96),
-  createData(2,'Mathematics',78),
-  createData(3,'Physics',88),
-  createData(4,'Biology',91),
-  createData(5,'History',76),
-  createData(6,'Art',92),
+  createData(1,'English Language','Sir Shahid',96),
+  createData(2,'Mathematics','Sir Imran',78),
+  createData(3,'Physics','Sir Adeel khan',88),
+  createData(4,'Biology', 'Sir Riaz',91),
+  createData(5,'History', 'Mam Aneeta',76),
+  createData(6,'Art', 'Mam Sidra',92),
 
 ];
 
@@ -63,6 +63,7 @@ export default function StdTable() {
         <TableRow>
           <StyledTableCell sx={{fontWeight:'bold',fontSize:'20px'}}>#</StyledTableCell> 
           <StyledTableCell align="left" sx={{fontWeight:'bold',fontSize:'20px'}}>Subject</StyledTableCell>
+          <StyledTableCell align="left" sx={{fontWeight:'bold',fontSize:'20px'}}>Subject Teacher</StyledTableCell>
           <StyledTableCell align="right" sx={{fontWeight:'bold',fontSize:'20px'}}>Marks</StyledTableCell> 
         </TableRow>
       </TableHead>
@@ -74,6 +75,9 @@ export default function StdTable() {
             </StyledTableCell>
             <StyledTableCell align="left">
                {row.subj}
+            </StyledTableCell>
+            <StyledTableCell align="left">
+               {row.subteacher}
             </StyledTableCell>
             <StyledTableCell align="right" sx={{ fontWeight: 'bold', color: '#2e7d32' }}>
               {row.marks} / 100
